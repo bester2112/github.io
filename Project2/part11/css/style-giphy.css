@@ -1,0 +1,207 @@
+/**************************/
+/* HEADER */
+/**************************/
+
+.header-giphy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6f5fd;
+
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo-giphy {
+  height: 9.4rem;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.backgroundImage-CSS {
+  background-image: url("../img/cat.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /*width: 500px;*/
+  height: 100vh;
+  margin-top: -9.6rem;
+}
+
+.backgroundImage {
+  /* The image used */
+  /*background-image: url("../img/cat.jpg");*/
+
+  /* Full height */
+  /*height: 100%;*/
+
+  /* Center and scale the image nicely */
+  /*background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+
+  /*margin-top: -9.6rem;*/
+}
+
+.background-img-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.background-img {
+  height: inherit;
+}
+
+.logo {
+  height: 9.4rem;
+}
+
+/**************************/
+/* STICKY NAVIGATION */
+/**************************/
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .backgroundImage-CSS {
+  margin-top: 9.6rem;
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+.sticky-hidden .header {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list-giphy {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link-giphy:link,
+.main-nav-link-giphy:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link-giphy:hover,
+.main-nav-link-giphy:active {
+  color: #008dcf;
+}
+
+/* need to have ".main-nav-link-giphy AND .nav-cta" no space between*/
+.main-nav-link-giphy.nav-cta:link,
+.main-nav-link-giphy.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #009de6;
+}
+
+.main-nav-link-giphy.nav-cta:hover,
+.main-nav-link-giphy.nav-cta:active {
+  background-color: #008dcf;
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+
+.backgroundImage-CSS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading-primary {
+  color: #009de6;
+}
+.hero-text {
+  color: #009de6;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 2.3rem;
+  border-radius: 15px;
+}
+.hero-span {
+  font-size: 2.3rem;
+}
+.section-hero {
+  background-color: #e6f5fd;
+  padding: 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto; /* center */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-giphy {
+  display: grid;
+  height: 100%;
+}
+
+.hero-giphy-img {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}

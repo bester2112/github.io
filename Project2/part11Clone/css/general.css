@@ -1,0 +1,287 @@
+/*
+
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights: 
+Default: 400
+
+- Line heights: 
+Default: 1
+
+- Spacing System (px):
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+--- 02 COLORS
+
+- Logo Color 1: #009de6
+- Logo Color 2: #ffffff
+- Logo Color 2: #2e2e2e*/
+:root {
+  /*- Primary: #009de6*/
+  --color-primary-blue: #009de6;
+  --color-primary-blue-rgb: 0, 157, 230;
+
+  --color-primary-white: #ffffff;
+  --color-primary-white-rgb: 255, 255, 255;
+
+  --color-primary-grey: #2e2e2e;
+  --color-primary-grey-rgb: 46, 46, 46;
+
+  --color-secondary-light-orange: #ffb900;
+  --color-secondary-light-orange-rgb: 255, 185, 0;
+
+  --color-secondary-orange: #ff7730;
+  --color-secondary-orange-rgb: 255, 119, 48;
+
+  --color-secondary-light-blue: #2998ff;
+  --color-secondary-light-blue-rgb: 41, 152, 255;
+
+  --color-secondary-purple: #5643fa;
+  --color-secondary-purple-rgb: 86, 67, 250;
+
+  /*- Tints: #e6f5fd
+#80cef3*/
+  --color-tint-nearly-white: #e6f5fd;
+  --color-tint-nearly-white-rgb: 230, 245, 253;
+
+  --color-tint-half-blue: #80cef3;
+  --color-tint-half-blue-rgb: 128, 206, 243;
+
+  /*- Shades: #008dcf
+#004f73*/
+  --color-shade-light-primary-blue: #008dcf;
+  --color-shade-light-primary-blue-rgb: 0, 141, 207;
+
+  --color-shade-darker-blue: #004f73;
+  --color-shade-darker-blue-rgb: 0, 79, 115;
+  /*- Accents: */
+  /*- Greys: 
+#555
+*/
+  --color-grey-light: #555;
+  --color-grey-light-rgb: 85, 85, 85;
+
+  --color-black: #000;
+  --color-black-rgb: 0, 0, 0;
+
+  /* FONT*/
+  --default-font-size: 1.6rem;
+
+  /* GRID*/
+  --grid-width: 114rem;
+  --gutter-vertical: 8rem;
+  --gutter-vertical-small: 6rem;
+  --gutter-horizontal: 6rem;
+}
+/*
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+--- 07 WHITESPACE
+
+- Spacing System (px):
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */ /* Important, changes all rem definitions */
+  /* to avoid that the user can also change the font size we use  */
+  font-size: 62.5%;
+  /* 10 px / 16 px = 0.625 = 62,5% */
+  /* Percentage of user's browser font-size setting */
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/**************************/
+/* GENERAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  /* 1140px are always often used if not 1200px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+
+  /*margin-bottom: 9.6rem;*/
+}
+
+.grid-custom {
+  display: grid;
+  column-gap: 4.8rem;
+  row-gap: 9.6rem;
+}
+
+.container-custom {
+  /* 1140px are always often used if not 1200px */
+  max-width: 140rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/*
+  .grid:last-child {
+    margin-bottom: 0;
+  }*/
+
+/* add  if is not the last child */
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--1-cols-minmax {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr); /* same as 1fr 1fr */
+}
+
+.grid--2-cols-custom {
+  grid-template-columns: 2fr 1.5fr; /* same as 1fr 1fr */
+}
+
+.grid--2-cols-minmax {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr); /* same as 1fr 1fr */
+}
+
+.grid--3-cols-minmax {
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* same as 1fr 1fr */
+}
+
+.grid--3-cols-1-small-2-bigger {
+  grid-template-columns: 1fr 2fr; /* same as 1fr 1fr */
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr); /* same as 1fr 1fr */
+}
+
+.grid--4-cols-minmax {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid--4-cols-2-small-1-bigger {
+  grid-template-columns: 1fr 1fr 2fr; /* same as 1fr 1fr */
+}
+
+.grid--4-cols-1-small-1-very-big {
+  grid-template-columns: 1fr 3fr; /* same as 1fr 1fr */
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr); /* same as 1fr 1fr */
+}
+
+.grid--2-cols--bigger-text {
+  grid-template-columns: 1fr 3fr;
+}
+
+/* Centers grid items vertically */
+.grid--center-vertically {
+  align-items: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.sub-heading {
+  display: block; /* span needs to be type block */
+  font-size: 2rem;
+  font-weight: 500;
+  color: #008dcf;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  /* put transition on origional "state" */
+  /*fades fron one to another color of the button*/
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #009de6;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #008dcf;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #e6f5fd;
+
+  /* adds border outside not wanted */
+  /*border: 3px solid #fff;*/
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}

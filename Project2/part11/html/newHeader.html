@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+    <!-- stopping to zoom in on mobile devices currently until I add mobile view -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Y5xZWtaE72-5V2lqX");
+      })();
+    </script>
+
+    <link
+      rel="icon"
+      href="../img/Secure Fly - Dark - transparent - Logo only.svg"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/newHeader.css" />
+    <link rel="stylesheet" href="../css/utilities.css" />
+    <link rel="stylesheet" href="../css/linea/styles.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!--<script defer src="../js/script.js"></script>-->
+    <script defer src="../js/newHeader.js"></script>
+    <script defer src="../js/kontakt-asterix.js"></script>
+    <script defer src="../js/kontakt-math-problem.js"></script>
+    <script defer src="../js/kontakt-send-form.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+      window.ga =
+        window.ga ||
+        function () {
+          (ga.q = ga.q || []).push(arguments);
+        };
+      ga.l = +new Date();
+      ga("create", "UA-228401068-1", {
+        storage: "none",
+      });
+      ga("send", "pageview");
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <!-- End Google Analytics -->
+
+    <script>
+      (function (d, s, id, w, f) {
+        w[f] =
+          w[f] ||
+          function () {
+            (w[f].q = w[f].q || []).push(arguments);
+          };
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.onload = function () {
+          // remote script has loaded
+        };
+        js.async = true;
+        js.src = "https://cdn.trackboxx.info/p/tracker.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "trackboxx-script", window, "trackboxx");
+      trackboxx("set", "siteId", "TB-33187305");
+      trackboxx("trackPageview");
+    </script>
+
+    <title>Secure Fly</title>
+  </head>
+  <!--<body onload="generateChaptaEquation()">-->
+  <body onload="{generateChaptaEquation();}">
+    <div class="navigation">
+      <input type="checkbox" class="navigation-checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation-button">
+        <span class="navigation-icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation-background">&nbsp;</div>
+
+      <nav class="navigation-nav">
+        <ul class="navigation-list">
+          <li class="navigation">
+            <a href="#section-about" class="navigation-link"
+              >Über Secure Fly</a
+            >
+          </li>
+          <li class="navigation">
+            <a href="#section-features" class="navigation-link"
+              >Übersicht</a
+            >
+          </li>
+          <li class="navigation">
+            <a href="#section-tours" class="navigation-link"
+              >Kurse</a
+            >
+          </li>
+          <li class="navigation">
+            <a href="#anchorsection-kontakt" class="navigation-link"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header">
+      <div class="logo-box"></div>
+
+      <div class="text-box">
+        <h1 class="heading-primary">
+          <div class="flex-box-header">
+            <img
+              src="../img/Secure Fly - Dark - transparent - Logo only.svg"
+              class="logo"
+            />
+            <div>
+              <span class="heading-primary-main"
+                >Secure
+                <div class="text-color-blue">Fly</div></span
+              >
+              <span class="heading-primary-sub"
+                >die Anlaufstelle <br />
+                für Drohnen</span
+              >
+
+              <a
+                href="#section-about"
+                class="button-v2-header button-v2-header-white button-v2-header-animated"
+                >Mehr erfahren</a
+              >
+            </div>
+            <!-- <div class="justForDemonstration">
+              <a
+                href="#"
+                class="button-header button-header-white button-v2-header-animated"
+                >Mehr erfahren</a
+              >
+            </div> -->
+          </div>
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about">
+        <a class="anchor-section-about" id="section-about"></a>
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            Willkommen in der Welt der Drohnentechnologie – <br/> wo Innovation auf Expertise trifft.         
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols-minmax">
+          <div class="col-1-of-2">
+            <!--<h3 class="heading-tertiary u-margin-bottom-small">
+              You are going to fall in love with drones
+            </h3>
+            <p class="paragraph">
+              Suchen Sie atemberaubende Foto- und Videoaufnahmen? Oder faszinierende 360°-Bilder, die den Grundstein für virtuelle Touren legen? Vielleicht sind Sie auch auf der Suche nach eindrucksvollen, zeitbasierten Dokumentationen oder präzisen photogrammetrischen Analysen? Bei mir sind Sie genau richtig. 
+            </p>
+
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Find advantures with drones
+            </h3>
+            <p class="paragraph">
+              Schon seit meiner Jugend bin ich dem Zauber von Modelhubschraubern und Drohnen erlegen. Heute stehe ich an der Schnittstelle zwischen Hightech-Innovation und der Kunst des Fliegens. Mit tiefgreifender Erfahrung in der sicheren Drohnennutzung öffne ich Türen zu neuen Dimensionen.
+              <br/>
+              Doch ich biete mehr als nur Bilder: Meine maßgeschneiderten Schulungen, sowohl theoretisch als auch praktisch, und meine fundierten Gutachten runden mein Portfolio ab.              incidunt, repudiandae magni quo! Sequi, odio accusantium dolorum
+            </p>
+
+            Treten Sie näher, lassen Sie uns gemeinsam den Himmel erobern und Ihre Visionen Wirklichkeit werden lassen.
+            <a href="#" class="btn-text">Mehr information &rarr;</a>-->
+
+            Willkommen in der Welt der Drohnentechnologie – wo Innovation auf Expertise trifft.
+            <br/><br/>
+            Schon seit meiner Jugend bin ich dem Zauber von Modelhubschraubern und Drohnen erlegen. Heute stehe ich an der Schnittstelle zwischen Hightech-Innovation und der Kunst des Fliegens. Mit tiefgreifender Erfahrung in der sicheren Drohnennutzung öffne ich Türen zu neuen Dimensionen.
+            <br/><br/>
+            Suchen Sie atemberaubende Foto- und Videoaufnahmen? Oder faszinierende 360°-Bilder, die den Grundstein für virtuelle Touren legen? Vielleicht sind Sie auch auf der Suche nach eindrucksvollen, zeitbasierten Dokumentationen oder präzisen photogrammetrischen Analysen? Bei mir sind Sie genau richtig. 
+            <br/><br/>
+            Doch ich biete mehr als nur Bilder: Meine maßgeschneiderten Schulungen, sowohl theoretisch als auch praktisch, und meine fundierten Gutachten runden mein Portfolio ab.
+            <br/><br/>
+            Treten Sie näher, lassen Sie uns gemeinsam den Himmel erobern und Ihre Visionen Wirklichkeit werden lassen.
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img
+                src="../img/sample/nat-1-large.jpg"
+                alt="Photo 1"
+                class="composition-photo photo--p1"
+                loading="lazy"
+              />
+              <img
+                src="../img/sample/nat-2-large.jpg"
+                alt="Photo 2"
+                class="composition-photo photo--p2"
+                loading="lazy"
+              />
+              <img
+                src="../img/sample/nat-3-large.jpg"
+                alt="Photo 3"
+                class="composition-photo photo--p3"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-features">
+        <div class="container-custom grid">
+          <div>
+            <a class="anchor-section-features-1" id="section-features-1"></a>
+            <div class="u-margin-bottom-medium">
+              <h2 class="heading-secondary-portfolio remove-margin-bottom ">Portfolio</h2>
+            </div>
+            <div class="container grid grid--4-cols-minmax">
+              <div class="col-1-of-4">
+                <div class="feature-box">
+                  <i class="feature-box-icon ion-beer"></i>
+                  <h3 class="heading-tertiary u-margin-bottom-small">Foto- und Videoaufnahmen aus einer besonderen Perspektive am Boden und aus der Luft
+                  </h3>
+                  <p class="feature-box-text">
+                    <ul>
+                      <li>Landschaftsfotografie</li>
+                      <li>Immobilienfotografie</li>
+                      <li>Veranstaltungsdokumentation</li>
+                      <li>Inspektionsaufnahmen</li>
+                      <li>Wildlife-Capture</li>
+                      <li>Sportevents</li>
+                      <li>Werbeproduktionen</li>
+                      <li>Bauüberwachung</li>
+                      <li>Tourismuswerbung</li>
+                      <li>Porträtaufnahmen</li>
+                  </ul>                  
+                 <br />
+                 Mit den neusten Techniken und modernen Equipment ermögliche ich hochwertige Foto- und Videoaufnahmen sowohl am Boden als auch aus der Vogelperspektive. Dies reicht von faszinierenden Landschaftsaufnahmen über Immobilienfotografie bis hin zu dynamischen Sportevents. Jedes Bild und Video wird so zu einer Geschichte, die begeistert.
+                  </p>
+                  <a href="#section-features-1" class="btn-text">Mehr Infos 0</a>
+                </div>
+              </div>
+              <div class="col-1-of-4">
+                <div class="feature-box">
+                  <i class="feature-box-icon ion-android-car"></i>
+                  <h3 class="heading-tertiary u-margin-bottom-small">
+                    Detailreiche 360°-Ansichten
+                  </h3>
+                  <p class="feature-box-text">
+                    <ul>
+                      <li>Immobilienpräsentationen</li>
+                      <li>Tourismusattraktionen</li>
+                      <li>Virtuelle Museumsrundgänge</li>
+                      <li>Eventvisualisierungen</li>
+                      <li>Geschäftsvorstellungen</li>
+                      <li>Campus-Touren</li>
+                      <li>Kulturstätten-Übersichten</li>
+                      <li>Sportstätten-Features</li>
+                      <li>Landschaftsüberblicke</li>
+                      <li>Historische Standorte</li>
+                    </ul>
+                  <br />
+                  360°-Ansichten bieten ein immersives Erlebnis, das den Betrachter in den Mittelpunkt des Geschehens stellt. Egal ob es sich um eine Immobilie, eine Sehenswürdigkeit oder ein historisches Monument handelt, der Rundumblick ermöglicht es, den Ort in seiner vollen Pracht und besonderer Detailtiefe zu erleben.
+                  </p>
+                  <a href="#popup-360-panorama" class="btn-text">Mehr Infos</a>
+                </div>
+              </div>
+              <div class="col-1-of-4">
+                <div class="feature-box">
+                  <i class="feature-box-icon ion-ios-search-strong"></i>
+                  <h3 class="heading-tertiary u-margin-bottom-small">Virtuelle Touren
+                  </h3>
+                  <p class="feature-box-text">
+                    <ul>
+                      <li>Immobilienbesichtigungen</li>
+                      <li>Museumsbesuche</li>
+                      <li>Universitäts-Campus-Touren</li>
+                      <li>Firmenpräsentationen</li>
+                      <li>Hotel- und Resort-Präsentationen</li>
+                      <li>Sehenswürdigkeiten-Entdeckungen</li>
+                      <li>Einkaufszentren-Vorstellungen</li>
+                      <li>Historische Stätten-Rundgänge</li>
+                      <li>Naturpark-Exkursionen</li>
+                      <li>Sportanlagen-Erkundungen</li>
+                    </ul>
+                 <br />
+                 Virtuelle Touren bieten dem Nutzer mit Hilfe der 360°- Aufnahmen interaktives Erlebnis, das es ihm ermöglicht, Orte und Räume aus der Ferne in vollem Umfang zu erkunden. Es ist, als wäre man physisch anwesend, ohne tatsächlich dort zu sein – eine Revolution in der Art, wie man Orte erleben und präsentieren kann. 
+                  </p>
+                  <a href="#popup-gutachten" class="btn-text">Mehr Infos</a>
+                </div>
+              </div>
+              <div class="col-1-of-4">
+                <div class="feature-box">
+                  <i class="feature-box-icon ion-university"></i>
+
+                  <h3 class="heading-tertiary u-margin-bottom-small">
+                    Dokumentationen
+                  </h3>
+                  <p class="feature-box-text">
+                    <ul>
+                      <li>Baufortschrittsdokumentationen</li>
+                      <li>Naturbeobachtungen</li>
+                      <li>Veranstaltungschroniken</li>
+                      <li>Jahreszeiten-Verläufe</li>
+                      <li>Agrarzyklen</li>
+                      <li>Stadtwachstums-Aufzeichnungen</li>
+                      <li>Verkehrsflussanalysen</li>
+                      <li>Tierschutzprojekt-Dokumentationen</li>
+                      <li>Renovierungs- und Restaurationsphasen</li>
+                      <li>Sporttrainings-Entwicklungen</li>
+                    </ul>
+                  
+                  <br />
+                  Zeitspezifische Dokumentationen bieten Einblicke in Veränderungen und Entwicklungen über einen längeren Zeitraum. Von Bauprojekten bis hin zu Naturbeobachtungen, diese Art der Dokumentation fängt den Wandel in seiner vollen Dynamik und weitreichenden Umfang ein.
+                  </p>
+                  <a href="#popup-theorie" class="btn-text">Mehr Infos</a>
+                </div>
+              </div>
+
+              <div class="col-1-of-4">
+                <a class="anchor-section-features-2" id="section-features-2"></a>
+
+                <div class="feature-box">
+                  <i class="feature-box-icon ion-ios-home"></i>
+                  <h3 class="heading-tertiary u-margin-bottom-small">
+                    Hochpräzise photogrammetrische Daten
+                  </h3>
+                  <p class="feature-box-text">
+                    <ul>
+                      <li>Geländemodelle</li>
+                      <li>Volumenmessungen</li>
+                      <li>Strukturanalysen</li>
+                      <li>Vegetationskartierungen</li>
+                      <li>Hochwasserschutzplanungen</li>
+                      <li>Bergbau- und Tagebauüberwachungen</li>
+                      <li>Archäologische Untersuchungen</li>
+                      <li>Stadtplanung und -entwicklung</li>
+                      <li>Infrastrukturplanungen</li>
+                      <li>Forstwirtschaftsanalysen</li>
+                    </ul>                  
+                 <br />
+                 Photogrammetrie nutzt Bilder, um genaue Messungen in der physischen Welt zu ermöglichen. Von detaillierten Geländemodellen bis zu archäologischen Untersuchungen, diese Methode bietet präzise Daten, die in einer Vielzahl von Branchen und Anwendungen unerlässlich sind.
+                  </p>
+                  <a href="#popup-photogrammetrie" class="btn-text">Mehr Infos</a>
+                </div>
+              </div>
+              <div class="col-1-of-4">
+                <div class="feature-box">
+                  <i class="feature-box-icon ion-videocamera"></i>
+                  <h3 class="heading-tertiary u-margin-bottom-small">
+                    Erstellung fundierter Gutachten
+                  </h3>
+                  <p class="feature-box-text">
+                    <ul>
+                      <li>Technische Begutachtungen</li>
+                      <li>Schadensanalysen</li>
+                      <li>Sicherheitsbewertungen</li>
+                      <li>Einsatzmöglichkeiten von Drohnen</li>
+                      <li>Gesetzlichkeitsprüfungen</li>
+                      <li>Leistungsbeurteilungen</li>
+                      <li>Markt- und Branchenanalysen</li>
+                      <li>Entwicklungsprognosen</li>
+                      <li>Kostenschätzungen</li>
+                    </ul>
+                 <br />
+                 Meine Gutachten basieren auf tiefem Fachwissen und praktischer Erfahrung im Drohnenbereich. Sie bieten eine fundierte Grundlage für Entscheidungen, sei es im Hinblick auf technische Aspekte, Schadensfälle oder die Einschätzung von Marktchancen.
+                  </p>
+                  <a href="#popup-foto-video" class="btn-text">Mehr Infos</a>
+                </div>
+              </div>
+              <div class="col-1-of-4">
+                <div class="feature-box">
+                  <i class="feature-box-icon ion-android-boat"></i>
+                  <h3 class="heading-tertiary u-margin-bottom-small">
+                    Drohnenhangar
+                  </h3>
+                  <p class="feature-box-text">
+                    <ul>
+                      <li>Vollautomatischer Flugbetrieb</li>
+                      <li>Erhöhung der Effizienz bei Überwachungsaufgaben</li>
+                      <li>Aktuelle Informationen durch autonomen Betrieb</li>
+                      <li>Erschließung neuer Einsatzgebiete</li>
+                      <li>24/7 Einsatzbereitschaft der Drohne</li>
+                      <li>Immer einsatzbereit für BVLOS-Flüge</li>
+                      <li>Automatische Bereitstellung präziser Missionsdaten</li>
+                      <li>Dient als Start-, Lande- und Ladestation</li>
+                      <li>Benutzerdefinierte Routenwahl und Flughäufigkeit</li>
+                    </ul>
+                    <br />
+                    Der Drohnen-Hangar ermöglicht vollautomatisierte Flüge. Der Nutzer kann eine Route auswählen und festlegen, wie oft ein Flug durchgeführt werden soll. Die Technologie im Hangar stellt sicher, dass die Drohne stets einsatzbereit ist und nach jedem Einsatz werden präzise Missionsdaten geliefert. Dies erhöht die Effizienz bei Überwachungsaufgaben und bietet stets aktuelle Informationen. Durch moderne Drohnen-Technologien eröffnen sich neue Einsatzmöglichkeiten, wie der Transport von medizinischen Gütern oder zur Brandprävention. Der Drohnenhangar gewährleistet, dass die Drohne flexibel und jederzeit einsatzbereit ist. Es dient nicht nur als Start-, Lande- und Ladestation, sondern ist immer für Flüge außerhalb der Sichtweite (BVLOS) verfügbar.
+                  </p>
+                  <a href="#popup-drohnenhangar" class="btn-text">Mehr Infos</a>
+                </div>
+              </div>
+              <div class="col-1-of-4">
+                <div class="feature-box">
+                  <i class="feature-box-icon ion-plane"></i>
+
+                  <h3 class="heading-tertiary u-margin-bottom-small">
+                    Maßgeschneiderte Schulungen in Theorie und Praxis
+                  </h3>
+                  <p class="feature-box-text">
+                    <ul>
+                      <li>Drohnenflug- Grundlagen, Aufbau, Spezialtrainings</li>
+                      <li>Sicherheitsprotokolle</li>
+                      <li>Fotografie- und Videotechniken</li>
+                      <li>Technische Wartung</li>
+                      <li>Gesetzliche Richtlinien</li>
+                      <li>Flugmanöver-Training</li>
+                      <li>Navigationsübungen</li>
+                      <li>Notfallszenarien-Training</li>
+                      <li>Datenverarbeitung und -analyse</li>
+                      <li>Spezialausrüstung und Zusatzmodule</li>
+                    </ul> 
+                 <br/>
+                 Meine Schulungen decken sowohl theoretisches Wissen als auch praktische Fertigkeiten ab, um sicher und effizient mit Drohnen umzugehen. Vom Erlernen der Grundlagen des Drohnenflugs über die neuesten gesetzlichen Bestimmungen bis hin zu fortgeschrittenen Flugtechniken – hier wird Kompetenz aufgebaut und vertieft.
+                  </p>
+                  <a href="#popup-detektion-abwehr" class="btn-text">Mehr Infos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <!-- <section class="section-tours">
+        <a class="anchor-section-tours" id="section-tours"></a>
+
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Drohnen fliegen macht Spass</h2>
+        </div>
+
+        <div class="container grid grid--3-cols-minmax">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card-side card-side--front">
+                <div class="card-picture card-picture-1">&nbsp;</div>
+                <h4 class="card-heading">
+                  <span class="card-heading-span card-heading-span-1">
+                    Grundlagen-Klasse
+                  </span>
+                </h4>
+                <div class="card-details">
+                  <ul>
+                    <li>3 Video Aufnahmen</li>
+                    <li>bis zu 30 Fotos</li>
+                    <li>2 Tage Grundlagen</li>
+                    <li>1 Tag Praktische Übungen</li>
+                    <li>Einsteiger Freundlich</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-side card-side--back card-side--back-1">
+                <div class="card-call-to-action">
+                  <div class="card-pricebox">
+                    <p class="card-price-only">Nur</p>
+                    <p class="price-value">297€</p>
+                  </div>
+                  <a href="#popup" class="button-header button-header-white"
+                    >Jetzt bestellen!</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card-side card-side--front">
+                <div class="card-picture card-picture-2">&nbsp;</div>
+                <h4 class="card-heading">
+                  <span class="card-heading-span card-heading-span-2"
+                    >Fokus auf Drohnen</span
+                  >
+                </h4>
+                <div class="card-details">
+                  <ul>
+                    <li>6 Video Aufnahmen</li>
+                    <li>Bis zu 50 Bilder</li>
+                    <li>1 Tag Grundlagen</li>
+                    <li>4 Tage Praktische Übungen</li>
+                    <li>Grundlagen sind bekannt</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-side card-side--back card-side--back-2">
+                <div class="card-call-to-action">
+                  <div class="card-pricebox">
+                    <p class="card-price-only">Nur</p>
+                    <p class="price-value">497€</p>
+                  </div>
+                  <a href="#popup" class="button-header button-header-white"
+                    >Jetzt bestellen!</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card-side card-side--front">
+                <div class="card-picture card-picture-3">&nbsp;</div>
+                <h4 class="card-heading">
+                  <span class="card-heading-span card-heading-span-3">
+                    Aufnahmen im Freien
+                  </span>
+                </h4>
+                <div class="card-details">
+                  <ul>
+                    <li>8 Video Aufnahmen</li>
+                    <li>Bis zu 80 Bilder</li>
+                    <li>3 Tage Grundlagen</li>
+                    <li>4 Tage Praktische Übungen</li>
+                    <li>Für Erfahrenere</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-side card-side--back card-side--back-3">
+                <div class="card-call-to-action">
+                  <div class="card-pricebox">
+                    <p class="card-price-only">Nur</p>
+                    <p class="price-value">897€</p>
+                  </div>
+                  <a href="#popup" class="button-header button-header-white"
+                    >Jetzt bestellen!</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#" class="button-header button-header-green"
+            >Entdecke alle Angebote</a
+          >
+        </div>
+      </section>-->
+
+     <!--  <section class="section-stories">
+        <a class="anchor-section-stories" id="section-stories"></a>
+        <div class="background-video">
+          <video
+            class="background-video-content"
+            id="RandomVideo"
+            autoplay
+            muted
+            loop
+          >
+            <source id="RandomVideoSource" />
+            <source src="../img/sample/video.mp4" type="video/mp4" />
+            <source src="../img/sample/video.webm" type="video/webm" />
+            Dein Browser wird nicht unterstützt.
+          </video>
+        </div>
+
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            Bisherige Kunden sind sehr begeistert
+          </h2>
+        </div>
+
+        <div class="container grid grid--1-cols-minmax">
+          <div class="story">
+            <figure class="story-shape">
+              <img
+                src="../img/sample/nat-8.jpg"
+                alt="Person on a tour"
+                class="story-image"
+              />
+              <figcaption class="story-caption">Mary Muster</figcaption>
+            </figure>
+            <div class="story-text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Habe es mir viel schweriger vorgestellt als gedacht
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
+                ullam accusantium sequi dolores, provident unde optio, quam
+                quasi iusto aliquid sunt asperiores qui ex exercitationem ab
+                excepturi, nesciunt laborum fuga!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container grid grid--1-cols-minmax">
+          <div class="story">
+            <figure class="story-shape">
+              <img
+                src="../img/sample/nat-9.jpg"
+                alt="Person on a tour"
+                class="story-image"
+              />
+              <figcaption class="story-caption">Jarry Muster</figcaption>
+            </figure>
+            <div class="story-text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Jetzt fliege ich mir viel mehr Sicherheit
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
+                ullam accusantium sequi dolores, provident unde optio, quam
+                quasi iusto aliquid sunt asperiores qui ex exercitationem ab
+                excepturi, nesciunt laborum fuga!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#" class="btn-text">Alle Rezensionen lesen &rarr;</a>
+        </div>
+
+        <button id="RandomVideoButton" onClick="randomVideoClicked()">
+          Random Background Test
+        </button>
+      </section> -->
+
+      <section class="section-personal" id="section-personal">
+        <div class="container-custom grid">
+          <div>
+            <div class="u-margin-bottom-medium">
+              <h2 class="heading-secondary remove-margin-bottom">Über mich</h2>
+            </div>
+            <div class="grid-custom grid--2-cols-custom">
+              <div class="personal-image">
+                <div>
+                  <img src="../img/frank.jpg" class="selektor1 personal-image">
+                </div>
+              </div>
+              <div class="personal-information">
+                <div class="u-margin-bottom-medium">
+                  <p class="personal-text">
+                    Seit meiner Jugend hat die Welt der Modellhubschrauber und Drohnen mich in ihren Bann gezogen. Was als leidenschaftliches Hobby begann, wurde schließlich zu meinem professionellen Zentrum.
+                    <br/><br/>
+                    Mit über einem Jahrzehnt Erfahrung im Bereich der Sicherheitsorgane kann ich auf eine beeindruckende Laufbahn im Bereich der Anmanned Aircraft System zurückblicken. Als Teil eines Elite Teams war ich für die verdeckte Aufklärung aus der Luft, die Einsatzbegleitung und Koordinierung, die mobile Überwachung und Observation bei unterschiedlichsten Lichtverhältnissen zuständig. Das sichere Übermitteln von Bild- und Video- informationen aus der Vogelperspektive zählte zu meinen täglichen Aufgaben.
+                    <br/><br/>
+                    Die Meisterung solcher Spezialeinsätze, insbesondere mit hochwertiger Technik, erfordert nicht nur umfangreiches technologisches Wissen, sondern auch solide praktische Flugerfahrung sowie die Fähigkeit, Ruhe zu bewahren, selbst in brenzligen Situationen.
+                    <br/><br/>
+                    Seit 2015 vertiefe ich mich in das Gebiet der Drohnenabwehr und erkannte schnell, dass sich durch mein umfangreiches Wissen in der Drohnennutzung synergetische Vorteile ergaben. Ein Verständnis dafür, was mit Drohnen möglich ist, liefert wertvolle und einzigartige Einsichten in die Anforderungen der Drohnenabwehr.
+                    <br/><br/>
+                    In meiner Rolle als Ausbilder entwickelte ich umfangreiche Schulungsprogramme, die auf meinen direkten Erfahrungen sowohl in der Drohnennutzung als auch in der Abwehr basieren. Diese fortschrittlichen Ansätze setzen neue Maßstäbe in der Sicherheitsindustrie sowie in kommerziellen und behördlichen Bereichen.
+                    <br/><br/>
+                    Benötigen Sie eine Lösung? Ich entwerfe für Sie ein maßgeschneidertes Konzept.
+
+                    <!--
+                    Seit meiner Kindheit begeistert mich das Thema Modellflug
+                    und Drohnen.
+                    <br />
+                    Was ich anfangs nur als Hobby sah, entwickelte sich diese
+                    innovative Technik mehr und mehr in mein Berufsfeld.
+                    <br />
+                    Heute kann ich als Teil einer
+                    <strong>Spezialeinheit</strong>, über eine
+                    <strong>15 Jährige Berufserfahrung</strong> im BOS-Bereich
+                    (<strong>B</strong>ehörden/<strong>O</strong>rganisationen
+                    mit <strong>S</strong>icherheitsaufgaben)
+                    <strong>mit Drohnentechnologie</strong>, zurückblicken.
+                    <br />
+                    <strong>Operative Aufklärung, mobile Verfolgung</strong> und
+                    <strong>Observationen</strong> in der
+                    <strong>Nacht</strong> –
+                    <strong>Das Auge aus der Luft</strong> und die Übermittlung
+                    der Bildinformationen, gehörten zu den täglichen
+                    Herausforderungen.
+                    <br />
+                    Um diese <strong>speziellen Einsatzlagen</strong> mit
+                    Drohnen und Technik im Wert von mehreren Millionen Euro auch
+                    bei Sturm, Schnee und Regen
+                    <strong>sicher abarbeiten zu können</strong>, ist ein tiefes
+                    <strong>Hintergrundwissen</strong> der Technologie und die
+                    <strong>praktische Flugerfahrung</strong> erforderlich, um
+                    auch die Nerven behalten zu können, wenn es
+                    <strong>gefährlich</strong> wird.
+                    <br />
+                    Als <strong>Ausbilder</strong> habe ich nicht nur ein
+                    <strong>Schulungskonzept</strong> auf Basis meiner
+                    praktischen Erfahrungen entwickelt, sondern
+                    <strong>Lösungen</strong>, welche
+                    <strong>ungeahnte Möglichkeiten</strong> in der
+                    <strong>Sicherheitsbranche</strong> sowie im
+                    <strong>Industrie und privaten Bereich</strong>
+                    bietet.
+                    <br />
+                    Sie brauchen eine <strong>Lösung</strong>? – ich entwickel
+                    für Sie ein <strong>individuelles Konzept</strong>. -->
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--<section class="section-newsletter" id="section-newsletter">
+        <div class="container grid grid--1-cols-minmax">
+          <div class="newsletter">
+            <div class="newsletter-form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary remove-margin-bottom">
+                    Anmelden zum Newsletter
+                  </h2>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="Name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form-label">Name</label>
+                </div>
+
+                <div class="form-group u-margin-bottom-medium">
+                  <input
+                    type="email"
+                    class="form-input"
+                    placeholder="e-Mail Adresse"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form-label">e-Mail Adresse</label>
+                </div>
+
+                <div class="form-group">
+                  <button class="button-header button-header-green">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>-->
+
+      <!--<iframe name="hiddenFrame" class="hide"></iframe>-->
+
+      <section
+        class="section-kontakt"
+        id="section-kontakt"
+        target="hiddenFrame"
+      >
+        <a class="anchor-section-stories" id="anchorsection-kontakt"></a>
+        <div class="container grid grid--1-cols-minmax">
+          <div class="kontakt">
+            <div class="kontakt-form">
+              <form
+                action="#"
+                class="custom-kontakt-form"
+                id="kontakt-to-securefly-form"
+                method="post"
+              >
+                <div
+                  class="grid grid--2-cols-minmax u-grid-colum-gap-bigger remove-margin-bottom remove-row-gap"
+                >
+                  <div>
+                    <div class="u-margin-bottom-medium">
+                      <h2 class="heading-secondary remove-margin-bottom">
+                        Kontakt aufnehmen
+                      </h2>
+                    </div>
+
+                    <div class="kontakt-form-group">
+                      <input
+                        type="text"
+                        class="kontakt-form-input kontakt-input-vorname"
+                        placeholder="Vorname"
+                        id="kontakt-vorname"
+                        oninvalid="this.setCustomValidity('Fülle dieses Feld aus')"
+                        oninput="setCustomValidity('')"
+                        required
+                      />
+                      <label for="kontakt-vorname" class="kontakt-form-label"
+                        >Vorname <span class="asterix-style">*</span></label
+                      >
+                      <span
+                        class="asterix-style-vorname asterix-style"
+                        id="asterix-style-vorname-id"
+                        >*</span
+                      >
+                    </div>
+
+                    <div class="kontakt-form-group">
+                      <input
+                        type="text"
+                        class="kontakt-form-input kontakt-input-nachname"
+                        placeholder="Nachame"
+                        id="kontakt-nachname"
+                        oninvalid="this.setCustomValidity('Fülle dieses Feld aus')"
+                        oninput="setCustomValidity('')"
+                        required
+                      />
+                      <label for="kontakt-nachname" class="kontakt-form-label"
+                        >Nachname <span class="asterix-style">*</span></label
+                      >
+                      <span
+                        class="asterix-style-nachname asterix-style"
+                        id="asterix-style-nachname-id"
+                        >*</span
+                      >
+                    </div>
+
+                    <div class="kontakt-form-group u-margin-bottom-medium">
+                      <input
+                        type="email"
+                        class="kontakt-form-input kontakt-email"
+                        placeholder="e-Mail Adresse"
+                        id="email"
+                        oninvalid="this.setCustomValidity('Fülle dieses Feld aus')"
+                        oninput="setCustomValidity('')"
+                        required
+                      />
+                      <label for="email" class="kontakt-form-label"
+                        >e-Mail Adresse
+                        <span class="asterix-style">*</span></label
+                      >
+                      <span
+                        class="asterix-style-email asterix-style"
+                        id="asterix-style-email-id"
+                        >*</span
+                      >
+                    </div>
+
+                    <div class="kontakt-form-group u-margin-bottom-medium">
+                      <input
+                        type="tel"
+                        class="kontakt-form-input"
+                        placeholder="Telephone Nummer"
+                        id="telephone"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                        required
+                      />
+                      <label for="telephone" class="kontakt-form-label"
+                        >Telephone Nummer</label
+                      >
+                    </div>
+                  </div>
+
+                  <div class="kontakt-right-side">
+                    <div class="u-margin-bottom-medium">
+                      <h2
+                        class="heading-secondary remove-margin-bottom u-none-display"
+                      >
+                        &nbsp;
+                      </h2>
+                    </div>
+                    <div class="kontakt-form-group-2">
+                      <span
+                        class="asterix-style-nachricht-area asterix-style"
+                        id="asterix-style-nachricht-area-id"
+                        >*</span
+                      >
+                      <textarea
+                        class="kontakt-nachricht-area kontakt-form-input"
+                        name="kontakt-nachricht "
+                        placeholder="Nachricht"
+                        id="kontakt-message"
+                        oninvalid="this.setCustomValidity('Fülle dieses Feld aus')"
+                        oninput="setCustomValidity('')"
+                        required
+                      ></textarea>
+
+                      <label
+                        for="kontakt-message"
+                        class="kontakt-form-label-nachricht"
+                        >Nachricht <span class="asterix-style">*</span></label
+                      >
+                    </div>
+                  </div>
+
+                  <div class="math-problem u-move-small-right">
+                    <span id="math-chapta-question"></span>
+                    <input
+                      type="text"
+                      class="kontakt-math-problem kontakt-form-input kontakt-form-input-asterix"
+                      placeholder="Antwort"
+                      id="math-solution-input"
+                      oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                      onchange="updateSubmitButton()"
+                      required
+                    />
+                    <span
+                      class="asterix-style-antwort asterix-style"
+                      id="asterix-style-antwort-id"
+                      >*</span
+                    >
+                    <div class="helper-relative">
+                      <ion-icon
+                        class="social-icon-2 blue"
+                        name="close-outline"
+                        id="blue-close-outline"
+                      ></ion-icon>
+
+                      <ion-icon
+                        class="social-icon-2 blue"
+                        name="checkmark-outline"
+                        id="blue-checkmark-outline"
+                      ></ion-icon>
+                    </div>
+                    <label
+                      for="math-solution-input"
+                      class="kontakt-form-label kontakt-math-solution-label"
+                      >Antwort <span class="asterix-style">*</span>
+                    </label>
+                  </div>
+
+                  <div
+                    class="grid grid--1-cols-minmax u-grid-colum-gap-bigger remove-margin-bottom remove-row-gap u-move-medium-right"
+                  >
+                    <div class="checkbox-style">
+                      <input
+                        type="checkbox"
+                        id="data-safety"
+                        name="Datenschutzerklärung"
+                        value="Datenschutzerklärung"
+                        required
+                      />
+                      <label for="data-safety">
+                        <div class="data-safety-text" id="data-safety-text">
+                          Ich willige in die Datenschutzerklärung ein
+                        </div>
+                        <span class="asterix-style">*</span>
+                      </label>
+                    </div>
+
+                    <div class="asterix-text">
+                      Hinweis: Felder mit
+                      <span class="asterix-style">*</span> müssen ausgefüllt
+                      werden
+                    </div>
+                  </div>
+                </div>
+                <div class="kontakt-form-group">
+                  <input
+                    type="button"
+                    href="#anchorsection-kontakt"
+                    class="button-header button-header-green"
+                    id="submit-form-button"
+                    onclick="sendEmail();"
+                    value="                  Abschicken                  "
+                  />
+
+                  <!--<button
+                    class="button-header button-header-green"
+                    id="submit-form-button"
+                    onclick="submit()"
+                  >
+                    Abschicken
+                  </button>-->
+                  <!-- <div id="result_math">here</div> -->
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--<section>
+        Pano2vr
+        <a href="../img/sample/pano2vr/output/index.html">HERE 2</a>
+      </section>-->
+
+      <footer class="footer footer-dark" id="footer">
+        <div class="container grid grid--footer">
+          <div class="logo-col">
+            <a href="#" class="footer-logo">
+              <img
+                class="logo"
+                alt="Secure Fly Logo"
+                src="../img/Secure Fly - Dark - transparent Background.png"
+              />
+            </a>
+
+            <ul class="social-links dark">
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon
+                    class="social-icon dark"
+                    name="logo-instagram"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon
+                    class="social-icon dark"
+                    name="logo-facebook"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-linkdark" href="#"
+                  ><ion-icon
+                    class="social-icon dark"
+                    name="logo-twitter"
+                  ></ion-icon
+                ></a>
+              </li>
+            </ul>
+
+            <p class="copyright dark">
+              Copyright &copy; <span class="year">3000</span> by Securefly, Inc.
+              All rights reserved.
+            </p>
+          </div>
+
+          <!--<div class="address-col">
+            <p class="footer-heading dark">Kontakt</p>
+            <address class="contacts">
+              <p class="address dark"></p>
+              <p>
+                <a class="footer-link dark-link" href="tel:415-201-6370"
+                  >415-201-6370</a
+                >
+                <br />-->
+          <!--<a
+                  class="footer-link dark-link"
+                  href="mailto:hello@securefly.de"
+                  >hello@securefly.com</a
+                >-->
+          <!--<p class="dark-email">E-Mail: </p>
+                <a id="email-platzhalter-footer" class="btn-text-footer"></a>
+                <a
+                  onmouseover=""
+                  onclick="showMail(`show-email-footer`, `email-platzhalter-footer`, `btn-text`, `btn-text-footer`)"
+                  class="btn-text btn-text-footer"
+                  id="show-email-footer"
+                  >E-Mail anzeigen</a
+                >
+                <br />
+              </p>
+            </address>
+          </div>-->
+
+          <nav class="nav-col dark">
+            <p class="footer-heading dark">Company</p>
+            <ul class="footer-nav dark">
+              <li>
+                <a class="footer-link dark-link" href="#">Über Secure Fly</a>
+              </li>
+              <li><a class="footer-link dark-link" href="#">Über mich</a></li>
+              <li>
+                <a class="footer-link dark-link" href="../vcf/Frank Gerlach.vcf"
+                  >VCard</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="nav-col">
+            <p class="footer-heading dark">Ressourcen</p>
+            <ul class="footer-nav">
+              <li>
+                <a class="footer-link dark-link" href="#">Datenschutz</a>
+              </li>
+              <li>
+                <a class="footer-link dark-link" href="./impressum.html"
+                  >Impressum</a
+                >
+              </li>
+              <li>
+                <a class="footer-link dark-link" href="#">Urheberrecht</a>
+              </li>
+              <li>
+                <a class="footer-link dark-link" href="#anchorsection-kontakt"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+
+      <!---------------------
+        ---------------------
+        ---------------------
+        -      POPUPS       -
+        ---------------------
+        ---------------------
+        --------------------->
+
+      <div class="popup" id="popup">
+        <div class="popup-content">
+          <div class="popup-left">
+            <img
+              src="../img/sample/nat-8.jpg"
+              alt="Tour photo"
+              class="popup-img"
+            />
+            <img
+              src="../img/sample/nat-9.jpg"
+              alt="Tour photo"
+              class="popup-img"
+            />
+          </div>
+          <div class="popup-right">
+            <a href="#section-tours" class="popup-close">&times;</a>
+            <h2 class="heading-secondary u-margin-bottom-small">
+              Start Booking now
+            </h2>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Important &ndash; Please read these terms before booking
+            </h3>
+            <p class="popup-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
+              temporibus beatae corporis corrupti quis officiis necessitatibus
+              totam unde asperiores, rem, eligendi ad dignissimos, consectetur
+              et laudantium inventore exercitationem odit? Perferendis! Lorem
+              ipsum dolor, sit amet consectetur adipisicing elit. Ab temporibus
+              beatae corporis corrupti quis officiis necessitatibus totam unde
+              asperiores, rem, eligendi ad dignissimos, consectetur et
+              laudantium inventore exercitationem odit? Perferendis! Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. Ab temporibus beatae
+              corporis corrupti quis officiis necessitatibus totam unde
+              asperiores, rem, eligendi ad dignissimos, consectetur et
+              laudantium inventore exercitationem odit? Perferendis!
+            </p>
+            <button class="button-header button-header-green">
+              Toller Button
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup popup-theorie" id="popup-theorie">
+        <div class="popup-content">
+          <div class="popup-left">
+            <img
+              src="../img/sample/nat-8.jpg"
+              alt="Tour photo"
+              class="popup-img"
+            />
+            <img
+              src="../img/sample/nat-9.jpg"
+              alt="Tour photo"
+              class="popup-img"
+            />
+          </div>
+          <div class="popup-right">
+            <a href="#section-features-1" class="popup-close">&times;</a>
+            <!-- container container-1 was before also content of the div down below -->
+            <div class="grid--1-cols-minmax grid--center-vertically">
+              <div class="step-text-box">
+                <h3 class="heading-secondary u-margin-bottom-small">
+                  Theorie & Praxis Schulungen
+                </h3>
+                <ul class="list">
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                    <span> Theorieschulung nach aktuellem Rechtsstand </span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                    <span> Auffrischung vergangener Schulungen </span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                    <span>
+                      Theoretische als auch praktische Tipps für effizientes und
+                      sicheres Arbeiten mit einer Drohne
+                    </span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                    <span>
+                      Praktische Flugschulung aus der Praxis für die Praxis
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <!--<div class="step-img-box">
+                <div class="step-img-box-content">
+                  <img
+                    src="../img/Kassel.jpg"
+                    class="step-img step-img-1"
+                    alt="ICAO Karte von Kassel"
+                  />
+                  <img
+                    src="../img/dfs.svg"
+                    class="step-img step-img-2"
+                    alt="DFS Deutsche Flugsicherheit Logo"
+                  />
+                </div>
+              </div>-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup popup-gutachten" id="popup-gutachten">
+        <div class="popup-content">
+          <div class="popup-left">
+            <img
+              src="../img/sample/nat-8.jpg"
+              alt="Tour photo"
+              class="popup-img"
+            />
+            <img
+              src="../img/sample/nat-9.jpg"
+              alt="Tour photo"
+              class="popup-img"
+            />
+          </div>
+          <div class="popup-right">
+            <a href="#section-features-1" class="popup-close">&times;</a>
+            <!-- container container-1 was before also content of the div down below -->
+            <div class="grid--1-cols-minmax grid--center-vertically">
+              <div class="step-text-box">
+                <h3 class="heading-secondary u-margin-bottom-small">
+                  Gutachten
+                </h3>
+                <ul class="list">
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                    <span>
+                      Sie sind nicht zufrieden mit einem gelieferten Unmanned
+                      Aircraft System?
+                    </span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                    <span>
+                      Datenblatt und Leistungen stimmen im praktischen Einsatz
+                      nicht überein?
+                    </span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                    <span>
+                      Die Anforderungen von Ihrer Ausschreibung werden nicht
+                      erfüllt?
+                    </span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                    <span>
+                      Ihre Drohne hat Schaden genommen und der Hersteller
+                      vertritt die Meinung
+                      <br />
+                      es sei ein Pilotenfehler?
+                    </span>
+                  </li>
+                  <li class="list-item list-solution">
+                    <ion-icon
+                      class="list-icon"
+                      name="arrow-redo-sharp"
+                    ></ion-icon>
+                    <span>
+                      Die Erstellung eines unabhängigen Gutachten löst viele
+                      Probleme!
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup popup-foto-video" id="popup-foto-video">
+        <div class="popup-content">
+          <div class="popup-left">
+            <img
+              src="../img/sample/nat-8.jpg"
+              alt="Tour photo"
+              class="popup-img"
+            />
+            <img
+              src="../img/sample/nat-9.jpg"
+              alt="Tour photo"
+              class="popup-img"
+            />
+          </div>
+          <div class="popup-right">
+            <a href="#section-features-2" class="popup-close">&times;</a>
+            <!-- container container-1 was before also content of the div down below -->
+            <div class="grid--1-cols-minmax grid--center-vertically">
+              <div class="step-text-box">
+                <h3 class="heading-secondary u-margin-bottom-small">
+                  Foto & Video Luftaufnahmen
+                </h3>
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                  Beispiele
+                </h3>
+
+                <ul class="list">
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                    <span> Immobilien </span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                    <span> Baustellen </span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                    <span> Parks </span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                    <span> Gewerbeflächen </span>
+                  </li>
+                  <li class="list-item list-solution">
+                    <ion-icon
+                      class="list-icon"
+                      name="arrow-redo-sharp"
+                    ></ion-icon>
+                    <span>
+                      Die Foto & Videoaufnahmen können, sehr detailliert,
+                      großflächig und hochauflösend nach Kundenwunsch umgesetzt
+                      werden.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup popup-detektion-abwehr" id="popup-detektion-abwehr">
+        <div class="popup-content">
+          <div class="popup-left">
+            <img
+              src="../img/sample/nat-8.jpg"
+              alt="Tour photo"
+              class="popup-img"
+            />
+            <img
+              src="../img/sample/nat-9.jpg"
+              alt="Tour photo"
+              class="popup-img"
+            />
+          </div>
+          <div class="popup-right">
+            <a href="#section-features-2" class="popup-close">&times;</a>
+            <!-- container container-1 was before also content of the div down below -->
+            <div class="grid--1-cols-minmax grid--center-vertically">
+              <div class="step-text-box">
+                <h3 class="heading-secondary u-margin-bottom-small">
+                  Drohnen-Detektion & Abwehr
+                </h3>
+
+                <ul class="list">
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                    <span> Erkennung </span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                    <span> Verifikation </span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                    <span> Abwehr mit und ohne Jamming möglich </span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="chevron-forward-outline"
+                    ></ion-icon>
+                    <span>
+                      Manuelle oder automatisierte Übernahme von Drohnen über
+                      ihren Anlagen oder in ihrem Areal
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup popup-drohnenhangar" id="popup-drohnenhangar">
+        <div class="popup-content">
+          <div class="popup-left">
+            <img
+              src="../img/sample/nat-8.jpg"
+              alt="Tour photo"
+              class="popup-img"
+            />
+            <img
+              src="../img/sample/nat-9.jpg"
+              alt="Tour photo"
+              class="popup-img"
+            />
+          </div>
+          <div class="popup-right">
+            <a href="#section-features-2" class="popup-close">&times;</a>
+            <!-- container container-1 was before also content of the div down below -->
+            <div class="grid--1-cols-minmax grid--center-vertically">
+              <div class="step-text-box">
+                <h3 class="heading-secondary u-margin-bottom-small">
+                  Drohnenhangar
+                </h3>
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                  Hier kommen noch weitere Informationen
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup popup-photogrammetrie" id="popup-photogrammetrie">
+        <div class="popup-content">
+          <div class="popup-left">
+            <img
+              src="../img/sample/nat-8.jpg"
+              alt="Tour photo"
+              class="popup-img"
+            />
+            <img
+              src="../img/sample/nat-9.jpg"
+              alt="Tour photo"
+              class="popup-img"
+            />
+          </div>
+          <div class="popup-right">
+            <a href="#section-features-2" class="popup-close">&times;</a>
+            <h2 class="heading-secondary u-margin-bottom-small">
+              Photogrammetrie
+            </h2>
+            <p class="popup-text">
+              Auf wünsch kann georeferenziertes Kartenmaterial in 2D oder auch
+              als 3D Modell erzeugt werden. Georeferenzierte Einzelaufnahmen
+              sind ebenfalls möglich.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup popup-360-panorama" id="popup-360-panorama">
+        <div class="popup-content">
+          <div class="popup-left">
+            <img
+              src="../img/sample/nat-8.jpg"
+              alt="Tour photo"
+              class="popup-img"
+            />
+            <img
+              src="../img/sample/nat-9.jpg"
+              alt="Tour photo"
+              class="popup-img"
+            />
+          </div>
+          <div class="popup-right">
+            <a href="#section-features-1" class="popup-close">&times;</a>
+            <h2 class="heading-secondary u-margin-bottom-small">
+              360 Grad Panorama Luftaufnahmen
+            </h2>
+            <p class="popup-text">
+              Auf wünsch kann georeferenziertes Kartenmaterial in 2D oder auch
+              als 3D Modell erzeugt werden. Georeferenzierte Einzelaufnahmen
+              sind ebenfalls möglich.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-kontakt-message" id="popup-kontakt-message-bad-id">
+        <div class="progress-bar progress-moved">
+          <div class="progress-bar-absolute">
+            <div class="progress-bar-2-bad"></div>
+          </div>
+          <div class="loader">Bitte korregieren Sie die markierten Felder</div>
+        </div>
+      </div>
+
+      <div class="popup-kontakt-message" id="popup-kontakt-message-good-id">
+        <div class="progress-bar progress-moved">
+          <div class="progress-bar-absolute">
+            <div class="progress-bar-2-good"></div>
+          </div>
+          <div class="loader">Danke! Ihre Nachricht wurde verschickt.</div>
+        </div>
+      </div>
+
+      <!-- <section class="grid-test">
+        <div class="grid grid--2-cols">
+          <div class="col-1-of-2">Col 1 of 2</div>
+          <div class="col-1-of-2">Col 1 of 2</div>
+        </div>
+        <div class="row">
+          <div class="col-1-of-3">Col 1 of 3</div>
+          <div class="col-1-of-3">Col 1 of 3</div>
+          <div class="col-1-of-3">Col 1 of 3</div>
+        </div>
+        <div class="row">
+          <div class="col-1-of-3">Col 1 of 3</div>
+          <div class="col-2-of-3">Col 2 of 3</div>
+        </div>
+        <div class="row">
+          <div class="col-1-of-4">Col 1 of 4</div>
+          <div class="col-1-of-4">Col 1 of 4</div>
+          <div class="col-1-of-4">Col 1 of 4</div>
+          <div class="col-1-of-4">Col 1 of 4</div>
+        </div>
+        <div class="row">
+          <div class="col-1-of-4">Col 1 of 4</div>
+          <div class="col-1-of-4">Col 1 of 4</div>
+          <div class="col-2-of-4">Col 2 of 4</div>
+        </div>
+        <div class="row">
+          <div class="col-1-of-4">Col 1 of 4</div>
+          <div class="col-3-of-4">Col 3 of 4</div>
+        </div>
+      </section> -->
+    </main>
+  </body>
+</html>

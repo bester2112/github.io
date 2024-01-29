@@ -1,0 +1,57 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+  border: 5px solid #000;
+}
+
+h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.free-shipping {
+  text-transform: uppercase;
+  color: #777;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 24px;
+}
+
+.add-to-cart-button {
+  text-transform: uppercase;
+}
+
+/* Styling button*/
+.add-to-cart-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Styling links */
+a:link,
+a:visited {
+  color: black;
+}
+
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: square;
+}

@@ -1,0 +1,354 @@
+/**************************/
+/* HEADER */
+/**************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6f5fd;
+
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 9.4rem;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #008dcf;
+}
+
+/* need to have ".main-nav-link AND .nav-cta" no space between*/
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #009de6;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #008dcf;
+}
+
+/**************************/
+/* STICKY NAVIGATION */
+/**************************/
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+.sticky-hidden .header {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+
+.section-hero {
+  background-color: #e6f5fd;
+  padding: 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto; /* center */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-giphy {
+  display: grid;
+  height: 100%;
+}
+
+.hero-giphy-img {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+/**************************/
+/* FOOTER SECTION */
+/**************************/
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+.dark {
+  color: #ffffff;
+}
+
+.dark-link:link,
+.dark-link:visited {
+  color: #ffffff;
+}
+
+.dark-link:hover,
+.dark-link:active {
+  color: #c0c0c0;
+}
+
+.footer-dark {
+  background-color: #2e2e2e;
+}
+
+/**************************/
+/* TEMPORÄR WIRD ENTFERNT */
+/**************************/
+.container-1 {
+  height: 50rem;
+  background-color: #e6f5fd;
+}
+
+.container-2 {
+  height: 50rem;
+  background-color: #008dcf;
+}
+
+.container-3 {
+  height: 50rem;
+}
+
+.fixed {
+  background-image: linear-gradient(
+      to right,
+      rgb(0, 141, 207),
+      rgba(0, 157, 230, 0.5)
+    ),
+    linear-gradient(to right, rgb(0, 141, 207), rgba(0, 157, 230, 0.1)),
+    linear-gradient(to right, rgb(0, 141, 207), rgba(0, 157, 230, 0.3)),
+    url(../img/drone-0.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/**************************/
+/* GUTACHTEN SECTION */
+/**************************/
+
+.section-gutachten {
+  padding: 9.6rem 0;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.6;
+}
+
+.list-solution {
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #009de6;
+}
+
+/**
+** Theorieschulungen
+*/
+
+.step-img-box-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-img {
+  width: 35%;
+}
+
+.step-img-1 {
+  width: 80%;
+  position: absolute;
+  border-radius: 50px;
+}
+
+.step-img-2 {
+  position: absolute;
+  bottom: -18rem;
+  left: -5rem;
+}
+
+.ion-icon-part {
+  color: #000;
+  width: 100px;
+  height: 100px;
+}
+
+.drone-img-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.pos-lupe {
+  position: relative;
+  top: 5rem;
+}
+
+.pos-clipboard {
+  position: relative;
+  bottom: 0rem;
+}
+
+.pos-drone {
+  position: relative;
+  top: -10rem;
+  right: -3rem;
+}
