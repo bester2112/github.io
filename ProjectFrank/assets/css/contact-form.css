@@ -1,0 +1,56 @@
+.container-contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  justify-content: space-between;
+}
+
+.contact-section {
+  flex: 1 1 400px;
+}
+
+.container-contact-form .kontakt-info .kontakt-form-input {
+  width: 100% !important;
+}
+
+.container-contact-form .kontakt-math-problem .kontakt-math-solution-label {
+  margin: 0 !important;
+}
+
+#submit-form-button {
+  margin-top: 20px;
+  width: 350px;
+  height: 100%;
+  padding: 20px;
+  font-size: medium;
+}
+
+@media screen and (max-width: 800px) {
+  #submit-form-button {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .kontakt-form .kontakt-form-group {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .container-contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: center;
+  }
+
+  .contact-section {
+    width: 600px;
+  }
+}

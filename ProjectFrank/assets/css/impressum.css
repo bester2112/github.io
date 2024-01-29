@@ -1,0 +1,25 @@
+body {
+  background-color: var(--color-tint-nearly-white);
+}
+
+.header {
+  clip-path: polygon(0 0, 100% 0, 100% 20vh, 0 40%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 180px, 0 250px);
+  min-height: unset;
+  height: 300px;
+  overflow: hidden;
+}
+
+.text-box {
+  position: absolute;
+  top: 4.6rem;
+  left: 2rem;
+  transform: translate(0, 0);
+
+  text-align: center;
+}
+
+.section-about {
+  margin: 0;
+  padding: 40px 10px 100px 10px;
+}
